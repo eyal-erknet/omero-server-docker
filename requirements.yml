@@ -1,2 +1,4 @@
 # External Ansible roles required by this repository
-- name: ome.omero_server
+- name: omero_server-mod
+  src: https://github.com/eyal-erknet/ansible-role-omero-server
+
