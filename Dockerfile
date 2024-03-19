@@ -54,20 +54,6 @@ RUN \
     mv /opt/ice-3.6.5 /opt/Ice-3.6.5 && \
     rm /opt/setup/ice-*.tar.gz
 
-#COPY ansible-role-omero-server-main.tar.gz /opt/setup/opt/setup/ansible-role-omero-server-main.tar.gz
-#RUN ansible-galaxy role install -p /opt/setup/roles ./ansible-role-omero-server-main.tar.gz
-
-
-
-#RUN dnf -y install cpio
-#COPY openssl-libs-1.1.1k-12.el8_9.aarch64.rpm /opt/setup/openssl-libs-1.1.1k-12.el8_9.aarch64.rpm
-#COPY openssl-1.1.1k-12.el8_9.aarch64.rpm /opt/setup/openssl-1.1.1k-12.el8_9.aarch64.rpm
-#COPY crypto-policies-20230731-1.git3177e06.el8.noarch.rpm /opt/setup/crypto-policies-20230731-1.git3177e06.el8.noarch.rpm
-#RUN cd /opt/setup && \
-#    rpm2cpio openssl-libs-1.1.1k-12.el8_9.aarch64.rpm | cpio -idmv -D /opt/setup / \
-#    mv /opt/setup/usr/lib64/* /usr/lib64/
-
-
 RUN curl -L -o /usr/local/bin/dumb-init \
     https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64 && \
     chmod +x /usr/local/bin/dumb-init
