@@ -1,8 +1,8 @@
-AARCH64 Rockylinux9 Version
+**AARCH64 Rockylinux9 Version**
 
 Docker build:
 
-docker buildx build --platform=linux/arm64 -t omero-ssh-arm64:latest .
+    docker buildx build --platform=linux/arm64 -t omero-ssh-arm64:latest .
 
 OMERO.server Docker
 ===================
